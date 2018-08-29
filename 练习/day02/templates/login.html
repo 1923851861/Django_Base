@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录界面</title>
+    <link rel="stylesheet" href="/static/bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container"></div>
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <form action="" method="post">   <!-- 指向的地址如果前缀都一样可以省略(如果地址为http://127.0.0.1:8000/login_submit/，可直接填写/login_submit/),如果值为空将指定当前网址 -->
+            <p>用户名：<input type="text" name="name" class="form-control"></p>
+            <p>密码：<input type="password" name="password" class="form-control"></p>
+            <p><input type="submit" value="登录" class="form-control"></p>
+            <p class="text-danger text-center">{{ error }}</p>
+        </form>
+    </div>
+</div>
+</body>
+</html>
