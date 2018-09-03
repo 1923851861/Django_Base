@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户信息</title>
+</head>
+<body>
+
+
+<table border="1">
+    <thead>
+    <tr>
+        <th>id</th>
+        <th>用户名</th>
+        <th>密码</th>
+        <th>性别</th>
+        <th>生日</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for user in user_list %}
+        <tr>
+            <td>{{ user.nid }}</td>
+            <td>{{ user.name }}</td>
+            <td>{{ user.password }}</td>
+            <td>{{ user.gender }}</td>
+            <td>{{ user.birthday }}</td>
+        </tr>
+
+    {% endfor %}
+
+
+
+    </tbody>
+</table>
+
+</body>
+</html>
